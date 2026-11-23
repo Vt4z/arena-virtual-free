@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0c1018" />
+    <meta name="description" content="Gerencie sua liga virtual, acompanhe os jogos e monte seu elenco." />
+    <title>Vestiário — Liga virtual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="auth-screen" id="auth-screen" aria-live="polite"></section>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#inicio" aria-label="Vestiário, início">
+          <span class="brand-mark"><svg viewBox="0 0 40 44" aria-hidden="true"><path d="M20 2 36 8v13c0 10.8-6.8 17.3-16 21C10.8 38.3 4 31.8 4 21V8L20 2Z" fill="currentColor"/><path d="m20 10 2.7 6.1 6.6.6-5 4.4 1.5 6.4-5.8-3.4-5.8 3.4 1.5-6.4-5-4.4 6.6-.6L20 10Z" fill="#d5fb73"/></svg></span>
+          <span class="brand-name">vestiário<span>.</span><small>FUTEBOL, DO SEU JEITO</small></span>
+        </a>
+        <div class="league-switcher" id="league-switcher"></div>
+        <div class="nav-label">MENU PRINCIPAL</div>
+        <nav class="main-nav" id="main-nav" aria-label="Navegação principal"></nav>
+        <div class="sidebar-spacer"></div>
+        <div class="season-card"><span class="season-orbit">✳</span><div><strong>Sua liga. Suas regras.</strong><p>Uma temporada inteira no controle da sua comunidade.</p></div></div>
+        <button class="profile-button" id="profile-button"><span class="avatar">AM</span><span class="profile-text"><strong>Arthur Manager</strong><small>Administrador da liga</small></span><span class="profile-menu">•••</span></button>
+      </aside>
+      <main class="main-area">
+        <header class="topbar"><div class="breadcrumb"><span id="season-label">Sua liga</span><span class="crumb-dot">/</span><strong id="page-label">Visão geral</strong></div><div class="topbar-actions"><span class="live-pill"><i></i> PAINEL DA LIGA</span><button class="icon-button" id="help-button" aria-label="Ajuda">?</button><button class="notification-button" id="notification-button" aria-label="Notificações"><svg viewBox="0 0 24 24"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9ZM10 21h4"/></svg><i></i></button><button class="avatar top-avatar" id="top-profile-button" aria-label="Sair da conta">AM</button></div></header>
+        <div class="page-container" id="page-container"></div>
+        <footer class="footer"><span>© 2026 Vestiário</span><span>Gerencie sua liga com <b>jogo limpo.</b></span><span class="demo-note"><i></i> Dados definidos por você</span></footer>
+      </main>
+    </div>
+    <div class="modal-root" id="modal-root"></div>
+    <div class="toast-region" id="toast-region" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

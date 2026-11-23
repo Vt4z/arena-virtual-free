@@ -1,0 +1,11 @@
+{
+  "name": "vestiario-liga-virtual",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Painel web para organizar ligas de futebol virtual.",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  }
+}
