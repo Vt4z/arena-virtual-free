@@ -5,7 +5,10 @@
   "type": "module",
   "description": "Painel web para organizar ligas de futebol virtual.",
   "scripts": {
-    "dev": "node server.js",
-    "start": "node server.js"
+    "dev": "node scripts/dev-server.js",
+    "start": "node scripts/dev-server.js"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.2.1"
   }
 }
